@@ -1,0 +1,74 @@
+body {
+  max-width: 650px;
+  margin: 0px auto;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+#root {
+  max-width: 500px;
+  margin-top: 2em;
+}
+
+#root.inactive {
+  opacity: .5;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element,
+.occurrence-group {
+  font-family: 'helvetica';
+  padding: 0.527777777em 1em;
+  margin: 1px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.element.button,
+.occurrence-group.button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.element.button.imp-correct,
+.occurrence-group.button.imp-correct {
+  background: lightgreen;
+  color: black;
+}
+
+.element.button.imp-incorrect,
+.occurrence-group.button.imp-incorrect {
+  background: pink;
+  color: black;
+}
+
+.element.button.exp-incorrect,
+.occurrence-group.button.exp-incorrect {
+  background: #000;
+  color: red;
+}
+
+.element.button.exp-correct,
+.occurrence-group.button.exp-correct {
+  background: #000;
+  color: lightgreen;
+}
+
+.element.button.omitted,
+.occurrence-group.button.omitted {
+  background: #000;
+  color: #bbb;
+}
+
+.occurrence-group {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.occurrence-group span:last-child {
+  padding-left: 0px;
+}
